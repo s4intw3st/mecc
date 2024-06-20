@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botão Dog</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #2c3e50, #bdc3c7);
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #f0e68c;
+      color: #333;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #e74c3c;
+    }
+    .mensagem {
+      margin-top: 20px;
+      font-size: 24px;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="mostrarMensagem()">Clique aqui para um dog!</button>
+  <div class="mensagem" id="mensagem"></div>
+  <script>
+    function mostrarMensagem() {
+      var mensagemDiv = document.getElementById('mensagem');
+      mensagemDiv.textContent = 'Quero um dog!';
+      document.body.style.background = 'linear-gradient(to right, #f1c40f, #e74c3c)';
+    }
+  </script>
+</body>
+</html>
